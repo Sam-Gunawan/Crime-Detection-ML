@@ -6,7 +6,7 @@ import joblib
 from streamlit_echarts import st_echarts
 from streamlit_modal import Modal
 
-st.set_page_config(page_title="Crime Detection with AI", layout="wide")
+st.set_page_config(page_title="Crime Forecasting with AI", layout="wide")
 
 # Load datasets
 df_area = pd.read_csv('./dataset/area_reference.csv')
@@ -86,9 +86,9 @@ st.markdown("Visualize and predict urban crime patterns with the latest advancem
 # Introduction
 with st.expander("What is this app about?", expanded=True):
     st.markdown("""
-                    ### 🔍 Crime Detection AI
+                    ### 🔍 Crime Forecasting AI
 
-                    Welcome to **Crime Detection AI** — a data-driven tool designed to estimate the number of weekly crime incidents across various areas using machine learning. Whether you're a policymaker, researcher, or data enthusiast, this platform helps you understand crime patterns with predictive insights.
+                    Welcome to **Crime Forecasting AI** — a data-driven tool designed to estimate the number of weekly crime incidents across various areas using machine learning. Whether you're a policymaker, researcher, or data enthusiast, this platform helps you understand crime patterns with predictive insights.
 
                     ---
 
